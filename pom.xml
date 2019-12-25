@@ -80,14 +80,28 @@
               <password>xiaodingdeng@dadi01</password>
           </configuration>
         </plugin>
-      <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-release-plugin</artifactId>
-         <version>2.5.3</version>
-          <configuration>
-          　 <tagNameFormat>v@{project.version}</tagNameFormat>
-          </configuration>
-      </plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-release-plugin</artifactId>
+      <version>2.0-beta-7</version>
+      <configuration>
+        <providerImplementations>
+          <git>jgit</git>
+        </providerImplementations>
+        <username>xxxusername</username>
+        <password>xxxxpasswrod</password>
+        <tagBase>${project.artifactId}-${project.version}</tagBase>
+        <goals>-f pom.xml deploy</goals>
+      </configuration>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.maven.scm</groupId>
+          <artifactId>maven-scm-provider-jgit</artifactId>
+          <version>1.9.5</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+
     </plugins>
   </build>
 </project>
