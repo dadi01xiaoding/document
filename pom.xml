@@ -13,9 +13,9 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
   <scm>
-    <connection>scm:git:git@github.com:dadi01xiaoding/document.git</connection>
-    <developerConnection>scm:git:git@github.com:dadi01xiaoding/document.git</developerConnection>
-    <url>git@github.com:dadi01xiaoding/document.git</url>
+    <connection>scm:git:https://github.com/dadi01xiaoding/document.git</connection>
+    <developerConnection>scm:git:https://github.com/dadi01xiaoding/document.git</developerConnection>
+    <url>https://github.com/dadi01xiaoding/document.git</url>
     <tag>simple-1.0</tag>
   </scm>
   <properties>
